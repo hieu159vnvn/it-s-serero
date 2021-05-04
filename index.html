@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light clearfix">
+        <div class="container">
+            <a id="navbarButton" class="navbar-toggler p-0 ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img id="iconMenu" class="d-block" src="public/img/Serero/SVG/Black/menu.svg" alt="">
+                <img style="width: 22px;" id="iconClose" class="d-none" src="public/img/Serero/SVG/Black/close.svg"
+                    alt="">
+            </a>
+            <div class="header-left pl-0">
+                <img src="public/img/Serero/2020_logo_SERERO_ARCHITECTES 1.png" alt="">
+            </div>
+            <a class="mail me-2" href="#"><img src="public/img/Serero/SVG/Black/mail.svg" alt=""></a>
+            <div class="header-right collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 " id="mainMenu">
+                    <li>
+                        <a href="#" onclick="headerDropX()">Services
+                            <img src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Réalisations</a>
+                    </li>
+                    <li>
+                        <a class="menuParent" href="#">guide<img src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            <!-- <ul class="child">
+                                <li>child</li>
+                            </ul> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Agence</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">FR</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">VN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-dropdown d-none" id="header-dropdown">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="item col-lg-3 col-md-3">
+                        <p class="title">Projets
+                            d'Investissement</p>
+                        <ul class="p-0">
+                            <li><a href="#">Etude capacitaire / de faisabilité</a></li>
+                            <li><a href="#">Divisions de lots / Extension</a></li>
+                            <li><a href="#">Projets clés en main</a></li>
+                            <li><a href="#">Permis de construire </a></li>
+                        </ul>
+                    </div>
+                    <div class="item col-lg-3 col-md-3">
+                        <p class="title">RÉNOVATION BâTIMENTS
+                            ANCIENS </p>
+                        <ul class="p-0">
+                            <li><a href="#">Architecte du Patrimoine</a></li>
+                            <li><a href="#">Architecte Réhabilitation</a></li>
+                            <li><a href="#">Changement d’usage</a></li>
+                            <li><a href="#">Modification murs porteurs
+                                    / Charpentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="item col-lg-3 col-md-3">
+                        <p class="title">Batiments ecologiques
+                            et innovants</p>
+                        <ul class="p-0">
+                            <li><a href="#">Rénovation énergétique
+                                    Bâtiment à énergie positive</a></li>
+                            <li><a href="#">Matériaux naturels et biosourcés</a></li>
+                            <li><a href="#">Maison écologique</a></li>
+                            <li><a href="#">Ossature bois</a></li>
+                        </ul>
+                    </div>
+                    <div class="item col-lg-3 col-md-3">
+                        <p class="title">ETABLISSEMENTS
+                            PUBLICS</p>
+                        <ul class="p-0">
+                            <li><a href="#">Etablissements recevant du public</a></li>
+                            <li><a href="#">Créer un ascenseur</a></li>
+                            <li><a href="#">Accès des publics</a></li>
+                            <li><a href="#">Sécurité incendie</a></li>
+                        </ul>
+                    </div>
+                    <div class="close text-center">
+                        <a onclick="headerDropX()" class="m-0"><img src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            Voir tous les services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <img src="/public/img/Serero/Mobile resize/Rectangle 5.png" alt="">
+        <div class="slider-details">
+            <h3>
+                <p class="title">Vos projets d’architecture en toute liberté</p>
+                <p class="description">Accompagnement sur mesure de votre projet, du permis de construire à la réception
+                    des travaux.</p>
+                <a href="#">Nous contacter</a>
+            </h3>
+        </div>
+    </section>
+    <section class="reassurance container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="title">Accompagnement</p>
+                    <p>Nous proposons un suivi et un accom-
+                        pagnement du projet sur mesure pour garantir le succès de votre projet</p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="title">Transparence</p>
+                    <p>Un suivi du budget du début jusqu’à la fin du projet avec pendant toutes les étapes une
+                        vérification
+                        des dépenses de travaux engagées</p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="title">Qualité </p>
+                    <p>Un suivi du budget du début jusqu’à la fin du projet avec pendant toutes les étapes une
+                        vérification
+                        des dépenses de travaux engagées</p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="title">Innovation</p>
+                    <p>Avec plus de 20 ans d’expérience, nos architectes sont experts dans les situ-
+                        ations de projets les plus différentes et spécifiques à un contexte et à un client</p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination text-start"></div>
+        </div>
+    </section>
+    <section class="agence container mt-150">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 left">
+                <img src="public/img/Serero/JPEG x1/Rectangle 7.jpg" alt="">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 right d-flex align-items-center">
+                <div>
+                    <h3>L’agence</h3>
+                    <p><b>L’agence SERERO Architectes + Designers </b>conçoit avant tout des lieux qui offrent le
+                        maximum d’espace et de plaisir de vivre. Nous travaillons aussi bien sur des bâtiments neufs
+                        qu’en rénovation de bâtiments anciens ou en site patrimonial. Le travail de l’agence est axé sur
+                        un <b>design exigeant au service de l’usage des espaces</b> avec une attention particulière à la
+                        lumière naturelle, à la matérialité des espaces et aux modes constructifs respectueux de
+                        l’environnement.</p>
+                    <p>Considéré comme<b> l’une des dix agences d’avant-garde </b>par le magazine Surface* USA , SERERO
+                        Architectes + Designers est lauréat du prix des Nouveaux Albums des Jeunes Architectes Français
+                        (NAJA), du Young Architects Forum de New York et du Prix de la Villa Médicis de l’Académie de
+                        France à Rome. </p>
+                    <div>
+                        <img src="public/img/Serero/JPEG x1/Rectangle 9.jpg" alt="">
+                        <img src="public/img/Serero/JPEG x1/Rectangle 10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prix container mt-150">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide text-center">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11.jpg" alt="">
+                </div>
+                <div class="swiper-slide text-center">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 12.jpg" alt="">
+                </div>
+                <div class="swiper-slide text-center">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 13.jpg" alt="">
+                </div>
+                <div class="swiper-slide text-center">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 14.jpg" alt="">
+                </div>
+                <div class="swiper-slide text-center">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 15.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="etapes container">
+        <div class="d-flex justify-content-between">
+            <div class="left">
+                <h2>Travailler <br>
+                    avec Serero</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <h3>1.</h3>
+                        <p class="title">La recherche</p>
+                        <p>Nous analysons ensemble vos besoins et la viabilité de votre projet. Nous vous présentons la
+                            diversité de nos offres de service, notre expérience, et l’approche spécifique que nous
+                            avons sur votre projet. C’est un temps d’échange et de prise de connaissance.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <h3>2.</h3>
+                        <p class="title">La recherche</p>
+                        <p>Nous analysons ensemble vos besoins et la viabilité de votre projet. Nous vous présentons la
+                            diversité de nos offres de service, notre expérience, et l’approche spécifique que nous
+                            avons sur votre projet. C’est un temps d’échange et de prise de connaissance.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <h3>3.</h3>
+                        <p class="title">L’étude</p>
+                        <p>Une fois le cadre de votre projet claire-
+                            ment défini, nous le dessinons, de l’es-
+                            quisse aux plans définitifs du projet jusqu’au cahier de consultations des entreprises.
+                            Cette étape est primordiale pour choisir avec vous les options du projet sur mesure et
+                            vérifier tous les choix de conception, de matériaux, et d’aménagements.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <h3>4.</h3>
+                        <p class="title">Les travaux</p>
+                        <p>Suivi de l’avancement des entreprises, suivi du budget, validation des produits proposés et
+                            vérification de la conformité, sont autant d’étapes qui garantissent le bon déroulement du
+                            chantier et une exécution de qualité du projet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="public/img/Serero/JPEG x1/Rectangle 26.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="banniere container d-flex">
+        <div class="left">
+            <h2 class="m-0">Serero</h2>
+            <p>en chiffres</p>
+        </div>
+        <div class="right">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                    <h3>247</h3>
+                    <p>Permis de
+                        construire obtenus
+                        pour nos clients</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                    <h3>135</h3>
+                    <p>Chantiers réalisés
+                        pour nos clients</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                    <h3>57%</h3>
+                    <p>D’économie
+                        énergétiques
+                        réalisés
+                        sur nos chantiers
+                        de rénovation</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+                    <h3>2,7M€</h3>
+                    <p>De couts de chantiers
+                        réalisés par an</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service mt-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 service-item">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 service-item">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-1.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 service-item">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-2.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="real mt-150">
+        <div class="container">
+            <h2>Réalisations</h2>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 real-left">
+                    <div class="left">
+                        <img src="public/img/Serero/JPEG x1/Rectangle 8-3.jpg" alt="">
+                        <a href="">
+                            <div>
+                                <p> Espace Public</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 right text-center m-auto">
+                    <div class="item top">
+                        <img src="public/img/Serero/JPEG x1/Rectangle 8-4.jpg" alt="">
+                        <a href="">
+                            <div>
+                                <p>Hôtellerie</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item bottom">
+                        <img src="public/img/Serero/JPEG x1/Rectangle 8-5.jpg" alt="">
+                        <a href="">
+                            <div>
+                                <p>Bureau</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="avis container mt-150">
+        <h2>Ils nous ont fait confiance</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="item swiper-slide ">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <p>“Architecte très pertinent. Il a su revoir le plan pour inonder de lumière notre maison. Ensuite,
+                        suivi de chantier rigoureux et exigeant.
+
+                        Je recommande vivement !”</p>
+                    <b>David LEVY</b>
+                </div>
+                <div class="item swiper-slide ">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <p>Projet de construction d'un bâtiment agricole sur terrain agricole à partir d'une structure
+                        métallique de ré-emploi démontée dans l'Est de la France. Etude réalisée pour faire une économie
+                        dans le projet de construction.</p>
+                    <b>Hervé MORIN</b>
+                </div>
+                <div class="item swiper-slide ">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <img src="public/img/Serero/Star 1.png" alt="">
+                    <p>L'agence Serero a conçu un immeuble de logements sur 4 étages à Puteaux.
+                        M. SERERO et ses architectes ont été force de propositions pendant toute la durée du chantier
+                        pour
+                        trouver des économies sans faire de concession...</p>
+                    <b>Stéphan SOARES</b>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination text-start"></div>
+        </div>
+    </section>
+    <section class="blog mt-150 container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-6.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-8.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-7.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-9.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination text-start"></div>
+        </div>
+    </section>
+    <section class="agence-serero mt-150 ">
+        <h3>Agence Serero</h3>
+        <p class="m-auto text-center">L’agence SERERO Architectes + Designers conçoit avant tout des lieux
+            qui offrent le maximum d’espace et de plaisir de vivre.</p>
+    </section>
+    <section class="lagence mt-150">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <div class="left">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 7-1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="wrap">
+                        <h3>L’agence</h3>
+                        <p><b>L’agence SERERO Architectes + Designers </b>conçoit avant tout des lieux qui offrent le
+                            maximum d’espace et de plaisir de vivre. Nous travaillons aussi bien sur des bâtiments neufs
+                            qu’en rénovation de bâtiments anciens ou en site patrimonial. Le travail de l’agence est axé sur
+                            un<b> design exigeant au service de l’usage des espaces </b>avec une attention particulière à la
+                            lumière naturelle, à la matérialité des espaces et aux modes constructifs respectueux de
+                            l’environnement.</p>
+                        <p>Considéré comme <b> l’une des dix agences d’avant-garde </b>par le magazine Surface* USA , SERERO
+                            Architectes + Designers est lauréat du prix des Nouveaux Albums des Jeunes Architectes Français
+                            (NAJA), du Young Architects Forum de New York et du Prix de la Villa Médicis de l’Académie de
+                            France à Rome. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lequipe mt-150">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <div class="left">
+                    <div class="wrap m-auto">
+                        <h3>L’équipe</h3>
+                        <p>L’agence s’appuie sur une équipe expérimentée et multi-disciplinaires incluant architectes,
+                            ingénieurs, designers d’intérieurs, BIM managers, artistes, pilote de chantier, et économiste de
+                            la construction. L’usage d’outils collaboratifs de travail et la dématérialisation complète des
+                            procédures de l’agence permettent de proposer un service sur-mesure à nos clients sur les
+                            projets où nous sommes impliqués. </p>
+                        <p>Ce mode de travail permet de reconfigurer notre équipe aux opportunités de projet et délais
+                            d’étude de chaque projet. D’autre part, notre base de données de plus de 500 projets conçus,
+                            constitue un atout pour vérifier les coûts de construction de projets similaires, la faisabilité
+                            des opérations, et identifier les entreprises les plus compétentes en fonction des choix
+                            constructifs du projet.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 7-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ordre mt-150 text-center">
+        <div class="container">
+            <h3>L’agence SERERO est inscrite à l’Ordre des Architectes depuis 2011. </h3>
+            <p>A ce titre, nous sommes assurés, pour notre assurance professionnelle et décennale, par la MAF (Mutuelle
+                des Architectes Français) qui couvre nos clients en complément de l’assurance dommage ouvrage.</p>
+            <div class="image">
+                <img src="public/img/Serero/JPEG x1/Rectangle 9.jpg" alt="">
+                <img src="public/img/Serero/JPEG x1/Rectangle 10.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="notre-equipe mt-150">
+        <div class="wrap m-auto">
+            <h2>Notre équipe</h2>
+            <div class="row">
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11-1.jpg" alt="">
+                    <p class="name mb-0">Antoine LOYER</p>
+                    <p>Architecte & Designer</p>
+                </div>
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11-2.jpg" alt="">
+                    <p class="name mb-0">Antoine LOYER</p>
+                    <p>Architecte & Designer</p>
+                </div>
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11-3.jpg" alt="">
+                    <p class="name mb-0">Antoine LOYER</p>
+                    <p>Architecte & Designer</p>
+                </div>
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11-4.jpg" alt="">
+                    <p class="name mb-0">Antoine LOYER</p>
+                    <p>Architecte & Designer</p>
+                </div>
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11-5.jpg" alt="">
+                    <p class="name mb-0">Antoine LOYER</p>
+                    <p>Architecte & Designer</p>
+                </div>
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 11-6.jpg" alt="">
+                    <p class="name mb-0">Antoine LOYER</p>
+                    <p>Architecte & Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="distinctions mt-150 container">
+        <h2>Distinctions</h2>
+        <div class="row">
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 39.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 38.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 40-1.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 7 copie.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 40.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 40-1.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 36.jpg" alt="">
+            </div>
+            <div class="item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <img src="public/img/Serero/JPEG x1/Rectangle 35.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="header-guides container mt-150">
+        <div class="row">
+            <div class="path col-xl-2 col-lg-2 col-md-12">
+                <p >Home / <b>Guides</b></p>
+            </div>
+            <div class="content col-xl-8 col-lg-8 col-md-12 text-center">
+                <h2>Guides</h2>
+                <p>L’agence SERERO Architectes + Designers conçoit avant tout des lieux
+                    qui offrent le maximum d’espace et de plaisir de vivre.</p>
+               
+            </div>
+            <div class="search col-xl-2 col-lg-2 col-md-12">
+                <form>
+                    <input type="text" placeholder="Rechercher">
+                    <button><img src="public/img/Serero/SVG/Black/search.svg" alt=""></button>
+                </form>
+            </div>
+        </div>
+        <div class="tag d-flex justify-content-center m-auto">
+            <div class="item">Logements</div>
+            <div class="item">Espaces de travail</div>
+            <div class="item">Bâtiments anciens</div>
+            <div class="item">Commerce/Hôtellerie</div>
+            <div class="item">Aménagements intérieurs</div>
+            <div class="item">Maisons</div>
+            <div class="item">Bâtiment Publics</div>
+            <select>
+                <option>Choisir la catégorie</option>
+                <option>Logements</option>
+                <option>Espaces de travail</option>
+                <option>Bâtiments anciens</option>
+                <option>Commerce/Hôtellerie</option>
+                <option>Aménagements intérieurs</option>
+                <option>Maisons</option>
+                <option>Bâtiment Publics</option>
+            </select>
+        </div>
+    </section>
+    <section class="g-blog">
+        <div class="d-flex justify-content-between">
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8.jpg" alt="">
+                <p class="title">CONSTRUIRE UNE MAISON EN ACIER ET EN BOIS</p>
+                <p>Il existe de multiples manières de construire une maison : en béton, en parpaing, ou encore en
+                    briques. Une autre alternative consiste à utiliser...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-1.jpg" alt="">
+                <p class="title">ISOLATION INTERIEURE OU EXTERIEURE ?</p>
+                <p>Telle est la question que se posent beaucoup de nos clients lorsqu’ils préparent des travaux de
+                    rénovation ou de construction d’un bâtiment...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-2.jpg" alt="">
+                <p class="title">VIVRE DANS UNE MAISON EN CONTAINER (CONTENEUR)</p>
+                <p>Les maisons-conteneurs ou containers sont apparues dans les années 90, tout d’abord sous formes de
+                    résidences étudiantes ou d’habitats innovants...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-3.jpg" alt="">
+                <p class="title">PERMIS DE CONSTRUIRE OU DECLARATION PREALABLE DE TRAVAUX ?</p>
+                <p>Avec plus de 20 ans d’expérience, notre agence d’architectes à Paris a mis au point un formulaire de
+                    demande en ligne de devis pour les missions architect...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-4.jpg" alt="">
+                <p class="title">FINI LE METRE, PLACE AU SCANNER 3D !</p>
+                <p>Avec plus de 20 ans d’expérience, notre agence d’architectes à Paris a mis au point un formulaire de
+                    demande en ligne de devis pour les missions architect...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-5.jpg" alt="">
+                <p class="title">VOTRE PROJET CLE EN MAIN</p>
+                <p>Avec plus de 20 ans d’expérience, notre agence d’architectes à Paris a mis au point un formulaire de
+                    demande en ligne de devis pour les missions architect...</p>
+            </div>
+        </div>
+        <div class="pagination d-flex justify-content-center">
+            <a class="page active">1</a>
+            <a class="page">2</a>
+            <a class="page">3</a>
+        </div>
+    </section>
+    <section class="g-post">
+        <h3 class="name">Les nouveaux espaces de travail</h3>
+        <p class="date">20 août 2020</p>
+        <div class="content">
+            <p class="bold">De l’open space au télétravail</p>
+            <p>Les lieux de travail ont subi une révolution dans ces dernières années. Nous sommes passés du bureau individuel, à l’open space, au flex office, au coworking, au télétravail avec pour objectif de fluidifier les flux de travail, d’améliorer la qualité de vie des employés, de s’adapter en permanence aux rapides transformations des processus de production.</p>
+            <p>L’émergence des processus numériques nous ont fait basculer dans un monde de collaboration et d’amélioration en continu auxquels les espaces de travail et l’architecture ont été bien souvent des vecteurs de résistance. </p>
+            <p class="bold">Comment un espace de travail peut-il s’adapter à un processus qui double de vitesse tous les 18 mois?</p>
+            <p>Nous avons vu se multiplier les modes de collaboration dans le travail : teleconferencing, co-conception, lounging, co-learning alors que les lieux de confidentialité disparaissent, et que la sphère du privé à déboulé dans les espaces de travail avec les réseaux sociaux, les applis mobiles, avec l’explosion des dispositifs mobiles et des objets connectés. Le flex office, en proposant des espaces libres et non attribués a résolu un paradoxe grandissant :<b>des places de bureaux vides et des salles de réunions pleines à craquer.</b> </p>
+            <img src="public/img/Serero/JPEG x1/image 16.jpg" alt="">
+            <p class="bold">Est-ce la fin du bureau? bien au contraire….</p>
+            <p>Avec l’avènement du télétravail, c’est le lieux du domicile qui est privilégié par les employés. Il offre encore une nouvelle flexibilité qui est plébiscité par certains et détesté par d’autres dont les lieux privés ne sont pas adaptés. La conception des espaces de l’entreprise n’en est pas moins importante, bien au contraire…. Les espaces de travail deviennent des lieux de “branding” de l’identité et de l’histoire de la société, de transmission d’un message, des lieux d’échanges privilégiés entre collaborateurs, mais aussi des lieux où la formation et l’innovation (co-conception, collaboration pour l’émergence de nouvelles idées et concepts) en sortent privilégiées. Les entreprises deviendraient des campus ouverts sur leur environnement.
+
+                L’espace de travail : un mélange de confort et de design d’intérieur, de technologies sans contact et de laboratoire de campagne…</p>
+        </div>
+        <div class="tag d-flex justify-content-start">
+            <div class="item">Logements / Micro-collectifs</div>
+            <div class="item">Réalisé</div>
+            <div class="item">Grand Paris</div>
+        </div>
+        <div class="social d-flex justify-content-start">
+            <p>Partagez sur</p>
+            <img src="public/img/Serero/SVG/Black/facebook.svg" alt="">
+            <img src="public/img/Serero/SVG/Black/twitter.svg" alt="">
+            <img src="public/img/Serero/SVG/Black/pinterest.svg" alt="">
+            <img src="public/img/Serero/SVG/Black/mail.svg" alt="">
+            <img src="public/img/Serero/SVG/Black/link.svg" alt="">
+        </div>
+    </section>
+    <section class="g-blog-second">
+        <h3>Dans le même thème</h3>
+        <div class="block1 d-flex justify-content-between">
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8.jpg" alt="">
+                <p class="title">CONSTRUIRE UNE MAISON EN ACIER ET EN BOIS</p>
+                <p class="mb-0">Il existe de multiples manières de construire une maison : en béton, en parpaing, ou encore en
+                    briques. Une autre alternative consiste à utiliser...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-1.jpg" alt="">
+                <p class="title">CONSTRUIRE UNE MAISON EN ACIER ET EN BOIS</p>
+                <p class="mb-0">Il existe de multiples manières de construire une maison : en béton, en parpaing, ou encore en
+                    briques. Une autre alternative consiste à utiliser...</p>
+            </div>
+            <div class="item">
+                <img src="public/img/Serero/JPEG x1/img 8-2.jpg" alt="">
+                <p class="title">CONSTRUIRE UNE MAISON EN ACIER ET EN BOIS</p>
+                <p class="mb-0">Il existe de multiples manières de construire une maison : en béton, en parpaing, ou encore en
+                    briques. Une autre alternative consiste à utiliser...</p>
+            </div>
+        </div>
+        <div class="block2 d-flex justify-content-between mt-150">
+            <div class="item">
+                <h2>1.</h2>
+                <p class="title">Titre exemple lorem ipsum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque rhoncus vitae nulla enim
+                    porttitor commodo duis ante.</p>
+            </div>
+            <div class="item">
+                <h2>2.</h2>
+                <p class="title">Titre exemple lorem ipsum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque rhoncus vitae nulla enim
+                    porttitor commodo duis ante.</p>
+            </div>
+            <div class="item">
+                <h2>3.</h2>
+                <p class="title">Titre exemple lorem ipsum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque rhoncus vitae nulla enim
+                    porttitor commodo duis ante.</p>
+            </div>
+        </div>
+    </section>
+    <img class="img-banner mt-150 w-100" src="public/img/Serero/JPEG x1/Rectangle 60.jpg" alt="">
+    <section class="renovation m-auto text-center ">
+        <h3 class="p-0">Rénovation titre exemple</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet feugiat eget non cras aliquam.
+            Pulvinar urna, aliquet morbi sed sed id et.</p>
+        <img src="public/img/Serero/JPEG x1/Rectangle 61.jpg" alt="">
+        <div class="button clearfix">
+            <a>Exemple bouton</a>
+        </div>
+    </section>
+    <section class="autres container mt-150">
+        <div class="title">Nos réalisations</div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 7.jpg" alt="">
+                    <p class="name">Saint-Jean</p>
+                    <p>Restructuration immeuble</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 8.jpg" alt="">
+                    <p class="name">Saint-Hilaire</p>
+                    <p>Médiathèque</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 9.jpg" alt="">
+                    <p class="name">Bataille de Fromelles</p>
+                    <p>Musée</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 9.jpg" alt="">
+                    <p class="name">Bataille de Fromelles</p>
+                    <p>Musée</p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination text-start"></div>
+        </div>
+    </section>
+    <section class="service-second mt-150">
+        <div class="container">
+            <h3 class="title">Dans le même thème</h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide service-item">
+                        <img src="public/img/Serero/JPEG x1/img 8-9.jpg" alt="">
+                        <a href="#">
+                            <div class="service-wrap d-flex align-items-center">
+                                <div class="left pe-4">
+                                    Article en lien avec le sous-service
+                                </div>
+                                <div class="right">
+                                    <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                    <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide service-item">
+                        <img src="public/img/Serero/JPEG x1/Rectangle 8-10.jpg" alt="">
+                        <a href="#">
+                            <div class="service-wrap d-flex align-items-center">
+                                <div class="left pe-4">
+                                    Article en lien avec le sous-service
+                                </div>
+                                <div class="right">
+                                    <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                    <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide service-item">
+                        <img src="public/img/Serero/JPEG x1/Rectangle 8-11.jpg" alt="">
+                        <a href="#">
+                            <div class="service-wrap d-flex align-items-center">
+                                <div class="left pe-4">
+                                    Article en lien avec le sous-service
+                                </div>
+                                <div class="right">
+                                    <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                    <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination text-start"></div>
+            </div>
+        </div>
+    </section>
+    <section class="projets mt-150 container">
+        <p class="title">Projets d’investissement</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas sapien consectetur eu vivamus volutpat.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-6.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-8.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-7.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-9.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/Rectangle 8-9.jpg" alt="">
+                    <a href="#">
+                        <div class="service-wrap d-flex align-items-center">
+                            <div class="left">
+                                Architecte<br>
+                                d’intérieur
+                            </div>
+                            <div class="right">
+                                <img class="white" src="public/img/Serero/SVG/White/arrow-1.svg" alt="">
+                                <img class="black" src="public/img/Serero/SVG/Black/arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination text-start"></div>
+        </div>
+    </section>
+    <section class="nous mt-150 text-center">
+        <h3 class="title">Nous contacter</h3>
+        <p>Contactez-nous par Whatsapp au 06 12 13 14 15 ou par email.
+            Si questions, vous pouvez aussi nous appeler au 01 45 08 14 31
+            et nous vous contacterons rapidement
+        </p>
+        <div class="content">
+            <img src="public/img/Serero/JPEG x1/nous.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="wrap col-xl-6 col-lg-8 col-12">
+                        <form class="text-start" action="">
+                            <p class="title">Une question ? Un devis ?</p>
+                            <p>Nos équipes vous repondront dans les plus brefs délais</p>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Téléphone">
+                            <input type="text" placeholder="Email">
+                            <select >
+                                <option value="">Type de projet (optionnel)</option>
+                            </select>
+                            <input type="text" placeholder="Budget (optionnel)">
+                            <textarea  cols="30" rows="10" placeholder="Commentaire"></textarea>
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox" >S’incrire à la newsletter
+                            </div>
+                            <button>Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="autres-second d-flex justify-content-between">
+        <div class="item">
+            <img src="public/img/Serero/JPEG x1/image 7-3.jpg" alt="">
+            <p class="name">Arcueil</p>
+            <p>Une maison-lame</p>
+        </div>
+        <div class="item">
+            <img src="public/img/Serero/JPEG x1/image 8-1.jpg" alt="">
+            <p class="name">Vaugirard</p>
+            <p>Rénovation appartement</p>
+        </div>
+        <div class="item">
+            <img src="public/img/Serero/JPEG x1/image 9-2.jpg" alt="">
+            <p class="name">Quartier oberkampf</p>
+            <p>Rénovation de 2 appartements</p>
+        </div>
+        <div class="item">
+            <img src="public/img/Serero/JPEG x1/image 7-2.jpg" alt="">
+            <p class="name">Bourges</p>
+            <p>Réhabilitation IUT</p>
+        </div>
+        <div class="item">
+            <img src="public/img/Serero/JPEG x1/image 8-2.jpg" alt="">
+            <p class="name">Saumur</p>
+            <p>Centre culturel</p>
+        </div>
+        <div class="item">
+            <img src="public/img/Serero/JPEG x1/image 9-3.jpg" alt="">
+            <p class="name">Tribeca</p>
+            <p>Logements</p>
+        </div>
+    </section>
+    <img class="img-banner2 mt-150" src="public/img/Serero/JPEG x1/Rectangle 5 copie.jpg" alt="">
+    <section class="arcueil">
+        <div class="title clearfix">
+            <div class="left">
+                <h3>Arcueil</h3>
+                <p class="mb-0">Une maison-lame</p>
+            </div>
+            <div class="right d-flex justify-content-start">
+                <img src="public/img/Serero/SVG/Black/facebook.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/twitter.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/pinterest.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/mail.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/link.svg" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="info d-flex justify-content-start">
+                <div class="item d-flex">
+                    <p>Site</p><span>Arcueil, France</span>
+                </div>
+                <div class="item d-flex">
+                    <p>Prix</p><span>65 000 €</span>
+                </div>
+                <div class="item d-flex">
+                    <p>Surface</p><span>70m²</span>
+                </div>
+                <div class="item d-flex">
+                    <p>Design Team</p><span>SERERO architectes / David Serero, Julien Braga, Louisa Gouesnard, Jaime
+                        Yndurain</span>
+                </div>
+            </div>
+            <div class="main text-center">
+                <p class="mb-0">
+                    Sur une parcelle de 2,30 m de large, coincé entre 2 murs de maisons mitoyennes, ce projet offrait
+                    plusieurs challenges à l’architecte. 1. La parcelle est située sur une ancienne carrière de
+                    calcaire. Après l’étude géotechnique, plutôt que de faire un renfort du sol par micro-pieux ou par
+                    puits... Lire la suite
+                </p>
+                <img style="margin-top:30px" src="public/img/Serero/JPEG x1/image 10.jpg" alt="">
+                <img style="margin:110px 0 90px 0" src="public/img/Serero/JPEG x1/image 13.jpg" alt="">
+                <p
+                    style="font-weight: 500;font-size: 16px;line-height: 19px;letter-spacing: 0.1em;text-transform: uppercase;">
+                    Extension et rénovation d’une maison du Grand Paris</p>
+                <p>Sur une parcelle de 2,30 m de large, coincé entre 2 murs de maisons mitoyennes, ce projet offrait
+                    plusieurs challenges à l’architecte :</p>
+                <p>1. La parcelle est située sur une ancienne carrière de calcaire. Après l’étude géotechnique, plutôt
+                    que
+                    de faire un renfort du sol par micro-pieux ou par puits (très coûteux), nous avons mis en œuvre un
+                    radier (dalle béton épaisse) de 35 cm d’épaisseur pour réaliser les fondations de la maison.</p>
+                <p>2. Le site est en proximité d’un bâtiment inscrit aux monuments historiques (la chapelle d’Auguste
+                    Perret en béton et vitrages colorés). Les échanges avec l’ABF (Architecte des Bâtiments de France)
+                    ont permis de mettre au point la relation entre la maison existante et l’extension (position,
+                    calepinage de briques, dimensions des ouvertures) </p>
+                <p>3. La nécessité de faire entrer une voiture, pour le parking, sous la maison pour des contraintes
+                    réglementaires a obligé à suspendre la maison sur des portiques fins.</p>
+                <p>Le permis de construire de la maison a été accordé en 2 mois. Après une étude capacitaire, le projet
+                    crée dans cette extension un garage et un bureau pour une société de production de films
+                    indépendants.</p>
+                <p>∙ une extension du salon existant séparé par une double porte coulissante, </p>
+                <p>∙ une chambre avec salle de bain et dressing de type loft, isolée de la rue et ouvert sur des jardins
+                    fruitiers à l’arrière de la parcelle. </p>
+            </div>
+            <div class="tag d-flex justify-content-start">
+                <div class="item">Logements / Micro-collectifs</div>
+                <div class="item">Réalisé</div>
+                <div class="item">Grand Paris</div>
+            </div>
+            <div class="social d-flex justify-content-start">
+                <p>Partagez sur</p>
+                <img src="public/img/Serero/SVG/Black/facebook.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/twitter.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/pinterest.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/mail.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/link.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="autres-third">
+        <h3>Dans le même thème</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 7-3.jpg" alt="">
+                    <p class="name">Arcueil</p>
+                    <p>Une maison-lame</p>
+                </div>
+                <div class="item swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 8-1.jpg" alt="">
+                    <p class="name">Vaugirard</p>
+                    <p>Rénovation appartement</p>
+                </div>
+                <div class="item swiper-slide">
+                    <img src="public/img/Serero/JPEG x1/image 9-2.jpg" alt="">
+                    <p class="name">Quartier oberkampf</p>
+                    <p>Rénovation de 2 appartements</p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination text-start"></div>
+        </div>
+    </section>
+    <section class="offre mt-150">
+        <img src="public/img/Serero/JPEG x1/Rectangle 7-1 copie.jpg" alt="">
+        <div class="container wrap-offre">
+            <div class="row ">
+                <div class="left col-xl-6 col-lg-6 col-md-12 col-12">
+                    <div id="offreparent">
+                        <h3>Nos offres
+                            d’emploi</h3>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <div class="item">
+                                        <div class="content">
+                                            <p class="title">ARCHITECTE DE, CHEF DE PROJETS (H/F)</p>
+                                            <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant
+                                                parfaitement les outils 3D et le rendu image pour concevoir des projets sur
+                                                mesures, soignés et de qualité...</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <a class="button" data-bs-toggle="collapse" href="#collapseExample"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="item">
+                                        <div class="content">
+                                            <p class="title">ARCHITECTE confirmé (H/F)</p>
+                                            <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant parfaitement les outils 3D et le rendu image pour concevoir des projets sur mesures, soignés et de qualité...</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <a class="button" data-bs-toggle="collapse" href="#collapseExample2"><b>Stage </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="item">
+                                        <div class="content">
+                                            <p class="title">ARCHITECTE DE, CHEF DE PROJETS (H/F)</p>
+                                            <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant
+                                                parfaitement les outils 3D et le rendu image pour concevoir des projets sur
+                                                mesures, soignés et de qualité...</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <a class="button"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <div id="offrechild" class="d-none">
+                        <a onclick="offreReturn()" class="return"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                          </svg>Retourner aux offres</a>
+                        <div class="content-item " id="accordion">
+                            <div class="card">
+
+                                <div class="collapse" data-parent="#accordion" id="collapseExample">
+                                    <h3>Architecte DE, CHEF de projets (H/F)1</h3>
+                                    <div class="d-flex justify-content-start">
+                                        <a class="button"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                    </div>
+                                    <div class="main">
+                                        <b>Poste à pourvoir à partir de janvier 2021.</b>
+                                        <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant parfaitement les outils 3D et le rendu image pour concevoir des projets sur mesures, soignés et de qualité.</p>
+                                        <p>∙  Lectus nibh at lacinia nunc leo.</p>
+                                        <p>∙  Lorem ipsum ectus nibh at lacinia nunc leo.</p>
+                                        <p>∙  Diam tempor, tempor, euismod phasellus sapien eu.</p>
+                                        <b>Vos atouts</b>
+                                        <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+
+                            <div class="collapse" data-parent="#accordion" id="collapseExample2">
+                                <h3>Architecte DE, CHEF de projets (H/F)2</h3>
+                                <div class="d-flex justify-content-start">
+                                    <a class="button"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                </div>
+                                <div class="main">
+                                    <b>Poste à pourvoir à partir de janvier 2021.</b>
+                                    <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant parfaitement les outils 3D et le rendu image pour concevoir des projets sur mesures, soignés et de qualité.</p>
+                                    <p>∙  Lectus nibh at lacinia nunc leo.</p>
+                                    <p>∙  Lorem ipsum ectus nibh at lacinia nunc leo.</p>
+                                    <p>∙  Diam tempor, tempor, euismod phasellus sapien eu.</p>
+                                    <b>Vos atouts</b>
+                                    <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right col-xl-6 col-lg-6 col-md-12 col-12">
+                    <h3>Candidatures spontannées</h3>
+                    <p>Nos équipes vous repondront dans les plus brefs délais</p>
+                    <form action="">
+                        <input type="text" placeholder="Nom">
+                        <input type="email" placeholder="Email">
+                        <div class="file-upload d-flex justify-content-between align-items-center">
+                            <span id="spanUpload">Votre CV</span>
+                            <label class="custom-file-upload">
+                                <input id="uploadCV" type="file" accept=".pdf,.doc,.docx,.jepg">
+                                Choisir un fichier
+                            </label>
+                        </div>
+                        <div class="custom-input-text">Formats acceptés : PDF, Doc, Docx, JPEG jusqu’à 3mo</div>
+                        <textarea cols="30" rows="10" placeholder="Exprimez vos motivations et votre lien vers votre book"></textarea>
+                        <button>Postuler</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mentions mt-150">
+        <div class="wrap">
+            <h3>Mentions légales </h3>
+            <div class="description">Serero architectes + Designers</div>
+            <p class="title">Titre</p>
+            <p>Felis neque felis, viverra sem quis urna. Fringilla convallis pellentesque tortor tempor. At morbi convallis habitasse tincidunt ullamcorper. Dignissim eros sodales condimentum eu cursus. Scelerisque odio neque, ultricies vel aliquam. Cursus mauris nunc elit morbi. Id habitasse egestas diam, amet, in morbi justo. Velit purus neque proin dignissim semper sed.</p>
+        </div>
+    </section>
+    <section class="header-second mt-150 ">
+        <div class="container">
+            <div class="head d-flex justify-content-between">
+                <img src="public/img/Serero/2020_logo_SERERO_ARCHITECTES 1.png" alt="">
+                <ul class="menu ps-0 mb-0 d-flex justify-content-end align-items-center">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Réalisations</a></li>
+                    <li><a href="#">guide</a></li>
+                    <li><a href="#">Agence</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">FR</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">VN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner text-center">
+                <h3>Page introuvable</h3>
+                <p>La page que vous cherchez n’existe pas ou plus.</p>
+                <a href="">Retourner à la page d’accueil</a>
+            </div>
+        </div>
+    </section>
+    <section class="bannerquestion container mt-150">
+        <div class="wrap">
+            <div class="row content">
+                <div class="left col-xl-6 col-lg-6 col-md-12">
+                    <h3>Vos projets d’architecture
+                        en toute liberté</h3>
+                    <p>Vous vous posez encore des questions? Vous avez besoin d’aide sur votre projet?</p>
+                </div>
+                <div class="right col-xl-6 col-lg-6 col-md-12">
+                    <a href="">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-150 text-center ">
+        <div class="first d-flex justify-content-center align-items-center">
+            <p class="mb-0">Suivez-nous sur :</p>
+            <div>
+                <img src="public/img/Serero/SVG/Black/facebook.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/twitter.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/instagram.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/youtube.svg" alt="">
+                <img src="public/img/Serero/SVG/Black/pinterest.svg" alt="">
+            </div>
+        </div>
+        <div class="second d-flex justify-content-center">
+            <form action="" class="">
+                <input type="text" placeholder="S’incrire à la newsletter">
+                <button>ENVOYER</button>
+            </form>
+        </div>
+        <div class="third ">
+            <div class="container d-flex justify-content-between text-start flex-wrap">
+                <div class="item">
+                    <p class="title">Projets
+                        d'Investissement</p>
+                    <ul class="p-0">
+                        <li><a href="#">Etude capacitaire / de faisabilité</a></li>
+                        <li><a href="#">Divisions de lots / Extension</a></li>
+                        <li><a href="#">Projets clés en main</a></li>
+                        <li><a href="#">Permis de construire </a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="title">RÉNOVATION BâTIMENTS
+                        ANCIENS </p>
+                    <ul class="p-0">
+                        <li><a href="#">Architecte du Patrimoine</a></li>
+                        <li><a href="#">Architecte Réhabilitation</a></li>
+                        <li><a href="#">Changement d’usage</a></li>
+                        <li><a href="#">Modification murs porteurs
+                                / Charpentes</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="title">Batiments ecologiques
+                        et innovants</p>
+                    <ul class="p-0">
+                        <li><a href="#">Rénovation énergétique
+                                Bâtiment à énergie positive</a></li>
+                        <li><a href="#">Matériaux naturels et biosourcés</a></li>
+                        <li><a href="#">Maison écologique</a></li>
+                        <li><a href="#">Ossature bois</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="title">ETABLISSEMENTS
+                        PUBLICS</p>
+                    <ul class="p-0">
+                        <li><a href="#">Etablissements recevant du public</a></li>
+                        <li><a href="#">Créer un ascenseur</a></li>
+                        <li><a href="#">Accès des publics</a></li>
+                        <li><a href="#">Sécurité incendie</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p class="title">Serero</p>
+                    <ul class="p-0">
+                        <li><a href="#">Agence Serero</a></li>
+                        <li><a href="#">Nous rejoindre</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <img src="public/img/Serero/2020_logo_SERERO_ARCHITECTES 1.png" alt="">
+            <p>Copyright © 2020 Serero Architectes - Tous droits réservés / Mentions légales</p>
+        </div>
+    </footer>
+    <a class="conseil" id="conseil" onclick="conseilClick()">
+        <p class="mb-0"> Une question pour nous ?<br>
+            +33 (0) 1 45 08 14 31
+        </p>
+    </a>
+    <a onclick="conseilClick()" class="conseil-off d-none" id="conseil-off">
+        <img src="public/img/Serero/SVG/White/mail-1.svg" alt="">
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="public/app.js"></script>
+</body>
+
+</html>
