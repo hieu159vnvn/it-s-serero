@@ -11,6 +11,9 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="public/style.css">
 </head>
 
@@ -52,10 +55,10 @@
                         <a href="#">Contact</a>
                     </li>
                     <li>
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">FR</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">VN</a></li>
-                        </ul>
+                        <select> 
+                            <option value="FR">FR</option>
+                            <option value="VN">VN</option>
+                        </select>
                     </li>
                 </ul>
             </div>
@@ -124,10 +127,10 @@
             </h3>
         </div>
     </section>
-    <section class="reassurance container">
+    <section class="reassurance container" data-aos="zoom-in" data-aos-duration="2000">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" >
                     <p class="title">Accompagnement</p>
                     <p>Nous proposons un suivi et un accom-
                         pagnement du projet sur mesure pour garantir le succès de votre projet</p>
@@ -156,10 +159,10 @@
     </section>
     <section class="agence container mt-150">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-12 left">
+            <div class="col-xl-6 col-lg-6 col-md-12 left" data-aos="fade-left" data-aos-duration="2000">
                 <img src="public/img/Serero/JPEG x1/Rectangle 7.jpg" alt="">
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-12 right d-flex align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 right d-flex align-items-center" data-aos="fade-right" data-aos-duration="2000">
                 <div>
                     <h3>L’agence</h3>
                     <p><b>L’agence SERERO Architectes + Designers </b>conçoit avant tout des lieux qui offrent le
@@ -201,9 +204,9 @@
             </div>
         </div>
     </section>
-    <section class="etapes container">
+    <section class="etapes container clearfix">
         <div class="d-flex justify-content-between">
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-duration="2000">
                 <h2>Travailler <br>
                     avec Serero</h2>
                 <div class="row">
@@ -240,12 +243,13 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-duration="2000">
                 <img src="public/img/Serero/JPEG x1/Rectangle 26.jpg" alt="">
             </div>
         </div>
     </section>
-    <section class="banniere container d-flex">
+    <section class="banniere container d-flex" data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
         <div class="left">
             <h2 class="m-0">Serero</h2>
             <p>en chiffres</p>
@@ -334,7 +338,7 @@
         <div class="container">
             <h2>Réalisations</h2>
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12 real-left">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12 real-left" data-aos="fade-right" data-aos-duration="2000">
                     <div class="left">
                         <img src="public/img/Serero/JPEG x1/Rectangle 8-3.jpg" alt="">
                         <a href="">
@@ -345,7 +349,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-12 right text-center m-auto">
-                    <div class="item top">
+                    <div class="item top" data-aos="fade-down-left" data-aos-duration="2000">
                         <img src="public/img/Serero/JPEG x1/Rectangle 8-4.jpg" alt="">
                         <a href="">
                             <div>
@@ -353,7 +357,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="item bottom">
+                    <div class="item bottom " data-aos="fade-up-left" data-aos-duration="2000">
                         <img src="public/img/Serero/JPEG x1/Rectangle 8-5.jpg" alt="">
                         <a href="">
                             <div>
@@ -409,7 +413,7 @@
             <div class="swiper-pagination text-start"></div>
         </div>
     </section>
-    <section class="blog mt-150 container">
+    <section class="blog mt-150 container" data-aos="flip-left" data-aos-duration="2000">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -482,7 +486,7 @@
         <p class="m-auto text-center">L’agence SERERO Architectes + Designers conçoit avant tout des lieux
             qui offrent le maximum d’espace et de plaisir de vivre.</p>
     </section>
-    <section class="lagence mt-150">
+    <section class="lagence mt-150" data-aos="fade-down" data-aos-duration="2000">
         <div class="container-fluid">
             <div class="d-flex justify-content-between">
                 <div class="left">
@@ -509,7 +513,7 @@
     <section class="lequipe mt-150">
         <div class="container-fluid">
             <div class="d-flex justify-content-between">
-                <div class="left">
+                <div class="left" data-aos="fade-right" data-aos-duration="2000">
                     <div class="wrap m-auto">
                         <h3>L’équipe</h3>
                         <p>L’agence s’appuie sur une équipe expérimentée et multi-disciplinaires incluant architectes,
@@ -524,7 +528,7 @@
                             constructifs du projet.</p>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-left" data-aos-duration="2000">
                     <img src="public/img/Serero/JPEG x1/Rectangle 7-2.jpg" alt="">
                 </div>
             </div>
@@ -541,7 +545,7 @@
             </div>
         </div>
     </section>
-    <section class="notre-equipe mt-150">
+    <section class="notre-equipe mt-150" data-aos="flip-down" data-aos-duration="2000">
         <div class="wrap m-auto">
             <h2>Notre équipe</h2>
             <div class="row">
@@ -719,7 +723,7 @@
             <img src="public/img/Serero/SVG/Black/link.svg" alt="">
         </div>
     </section>
-    <section class="g-blog-second">
+    <section class="g-blog-second" data-aos="flip-up" data-aos-duration="2000">
         <h3>Dans le même thème</h3>
         <div class="block1 d-flex justify-content-between">
             <div class="item">
@@ -764,10 +768,10 @@
     </section>
     <img class="img-banner mt-150 w-100" src="public/img/Serero/JPEG x1/Rectangle 60.jpg" alt="">
     <section class="renovation m-auto text-center ">
-        <h3 class="p-0">Rénovation titre exemple</h3>
+        <h3>Rénovation titre exemple</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet feugiat eget non cras aliquam.
             Pulvinar urna, aliquet morbi sed sed id et.</p>
-        <img src="public/img/Serero/JPEG x1/Rectangle 61.jpg" alt="">
+        <img src="public/img/Serero/JPEG x1/Rectangle 61.jpg" alt="" data-aos="zoom-in" data-aos-duration="2000">
         <div class="button clearfix">
             <a>Exemple bouton</a>
         </div>
@@ -801,7 +805,7 @@
             <div class="swiper-pagination text-start"></div>
         </div>
     </section>
-    <section class="service-second mt-150">
+    <section class="service-second mt-150" >
         <div class="container">
             <h3 class="title">Dans le même thème</h3>
             <div class="swiper-container">
@@ -939,7 +943,7 @@
             <div class="swiper-pagination text-start"></div>
         </div>
     </section>
-    <section class="nous mt-150 text-center">
+    <section class="nous mt-150 text-center" >
         <h3 class="title">Nous contacter</h3>
         <p>Contactez-nous par Whatsapp au 06 12 13 14 15 ou par email.
             Si questions, vous pouvez aussi nous appeler au 01 45 08 14 31
@@ -958,12 +962,17 @@
                             <input type="text" placeholder="Email">
                             <select >
                                 <option value="">Type de projet (optionnel)</option>
+                                <option value="">Type de projet (optionnel)</option>
+                                <option value="">Type de projet (optionnel)</option>
                             </select>
                             <input type="text" placeholder="Budget (optionnel)">
                             <textarea  cols="30" rows="10" placeholder="Commentaire"></textarea>
-                            <div class="d-flex align-items-center">
-                                <input type="checkbox" >S’incrire à la newsletter
-                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    S’incrire à la newsletter
+                                </label>
+                              </div>
                             <button>Envoyer</button>
                         </form>
                     </div>
@@ -1003,7 +1012,7 @@
             <p>Logements</p>
         </div>
     </section>
-    <img class="img-banner2 mt-150" src="public/img/Serero/JPEG x1/Rectangle 5 copie.jpg" alt="">
+    <img class="img-banner2 mt-150" src="public/img/Serero/JPEG x1/Rectangle 5 copie.jpg" alt="" >
     <section class="arcueil">
         <div class="title clearfix">
             <div class="left">
@@ -1123,7 +1132,7 @@
                                                 mesures, soignés et de qualité...</p>
                                         </div>
                                         <div class="d-flex justify-content-end">
-                                            <a class="button" data-bs-toggle="collapse" href="#collapseExample"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                            <a class="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1134,7 +1143,7 @@
                                             <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant parfaitement les outils 3D et le rendu image pour concevoir des projets sur mesures, soignés et de qualité...</p>
                                         </div>
                                         <div class="d-flex justify-content-end">
-                                            <a class="button" data-bs-toggle="collapse" href="#collapseExample2"><b>Stage </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                            <a class="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><b>Stage </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1159,29 +1168,9 @@
                         <a onclick="offreReturn()" class="return"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
                           </svg>Retourner aux offres</a>
-                        <div class="content-item " id="accordion">
-                            <div class="card">
-
-                                <div class="collapse" data-parent="#accordion" id="collapseExample">
-                                    <h3>Architecte DE, CHEF de projets (H/F)1</h3>
-                                    <div class="d-flex justify-content-start">
-                                        <a class="button"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
-                                    </div>
-                                    <div class="main">
-                                        <b>Poste à pourvoir à partir de janvier 2021.</b>
-                                        <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant parfaitement les outils 3D et le rendu image pour concevoir des projets sur mesures, soignés et de qualité.</p>
-                                        <p>∙  Lectus nibh at lacinia nunc leo.</p>
-                                        <p>∙  Lorem ipsum ectus nibh at lacinia nunc leo.</p>
-                                        <p>∙  Diam tempor, tempor, euismod phasellus sapien eu.</p>
-                                        <b>Vos atouts</b>
-                                        <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-
-                            <div class="collapse" data-parent="#accordion" id="collapseExample2">
-                                <h3>Architecte DE, CHEF de projets (H/F)2</h3>
+                        <div class="content-item accordion" id="accordionExample">
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <h3>Architecte DE, CHEF de projets (H/F)</h3>
                                 <div class="d-flex justify-content-start">
                                     <a class="button"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
                                 </div>
@@ -1193,10 +1182,26 @@
                                     <p>∙  Diam tempor, tempor, euismod phasellus sapien eu.</p>
                                     <b>Vos atouts</b>
                                     <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
+                                    <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
                                 </div>
-                            </div>
-                            </div>
-                        </div>
+                              </div>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <h3>ARCHITECTE confirmé (H/F)</h3>
+                                <div class="d-flex justify-content-start">
+                                    <a class="button"><b>CDI </b>à Paris <img src="public/img/Serero/SVG/White/arrow-1.svg "> </a>
+                                </div>
+                                <div class="main">
+                                    <b>Poste à pourvoir à partir de janvier 2021.</b>
+                                    <p>Nous recherchons un architecte concepteur, créatif, rigoureux maîtrisant parfaitement les outils 3D et le rendu image pour concevoir des projets sur mesures, soignés et de qualité.</p>
+                                    <p>∙  Lectus nibh at lacinia nunc leo.</p>
+                                    <p>∙  Lorem ipsum ectus nibh at lacinia nunc leo.</p>
+                                    <p>∙  Diam tempor, tempor, euismod phasellus sapien eu.</p>
+                                    <b>Vos atouts</b>
+                                    <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
+                                    <p>Vitae, quis tempus dolor, lacinia nisl est tincidunt nibh. Sed odio imperdiet duis urna. Mauris scelerisque sem sed pretium rutrum at. Ullamcorper commodo vestibulum, ac arcu imperdiet. Diam tempor, tempor, euismod phasellus sapien eu. Mauris elit eu libero sit tortor iaculis mus dictum. Nunc et ac pretium elit congue et. In odio cursus fringilla euismod egestas facilisi. Tempus nec, senectus nulla ziam tempor, tempor, euismod phasellus sapien eu</p>
+                                </div>
+                              </div>
+                          </div>
                     </div>
                 </div>
                 <div class="right col-xl-6 col-lg-6 col-md-12 col-12">
@@ -1220,7 +1225,7 @@
             </div>
         </div>
     </section>
-    <section class="mentions mt-150">
+    <section class="mentions mt-150" >
         <div class="wrap">
             <h3>Mentions légales </h3>
             <div class="description">Serero architectes + Designers</div>
@@ -1253,8 +1258,8 @@
             </div>
         </div>
     </section>
-    <section class="bannerquestion container mt-150">
-        <div class="wrap">
+    <section class="bannerquestion mt-150" >
+        <div class="wrap container">
             <div class="row content">
                 <div class="left col-xl-6 col-lg-6 col-md-12">
                     <h3>Vos projets d’architecture
@@ -1284,8 +1289,8 @@
                 <button>ENVOYER</button>
             </form>
         </div>
-        <div class="third ">
-            <div class="container d-flex justify-content-between text-start flex-wrap">
+        <div class="third container">
+            <div class="d-flex justify-content-between text-start flex-wrap">
                 <div class="item">
                     <p class="title">Projets
                         d'Investissement</p>
@@ -1337,6 +1342,74 @@
                     </ul>
                 </div>
             </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="item">
+                    <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Projets
+                        d'Investissement
+                    </a>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <ul class="p-0">
+                            <li><a href="#">Etude capacitaire / de faisabilité</a></li>
+                            <li><a href="#">Divisions de lots / Extension</a></li>
+                            <li><a href="#">Projets clés en main</a></li>
+                            <li><a href="#">Permis de construire </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">RÉNOVATION BâTIMENTS ANCIENS
+                    </a>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <ul class="p-0">
+                            <li><a href="#">Architecte du Patrimoine</a></li>
+                            <li><a href="#">Architecte Réhabilitation</a></li>
+                            <li><a href="#">Changement d’usage</a></li>
+                            <li><a href="#">Modification murs porteurs
+                                    / Charpentes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Batiments ecologiques 
+                        et innovants
+                    </a>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <ul class="p-0">
+                            <li><a href="#">Rénovation énergétique Bâtiment à énergie positive</a></li>
+                            <li><a href="#">Matériaux naturels et biosourcés</a></li>
+                            <li><a href="#">Maison écologique</a></li>
+                            <li><a href="#">Ossature bois</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        ETABLISSEMENTS PUBLICS
+                    </a>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <ul class="p-0">
+                            <li><a href="#">Etablissements recevant du public</a></li>
+                            <li><a href="#">Créer un ascenseur</a></li>
+                            <li><a href="#">Accès des publics</a></li>
+                            <li><a href="#">Sécurité incendie</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Serero
+                    </a>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <ul class="p-0">
+                            <li><a href="#">Agence Serero</a></li>
+                            <li><a href="#">Nous rejoindre</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="copyright text-center">
             <img src="public/img/Serero/2020_logo_SERERO_ARCHITECTES 1.png" alt="">
@@ -1358,6 +1431,8 @@
     <!-- swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="public/app.js"></script>
 </body>

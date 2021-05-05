@@ -1,3 +1,5 @@
+
+AOS.init();
 function headerDropX() {
   var x = document.getElementById("header-dropdown");
   if (x.className === "header-dropdown") {
@@ -24,6 +26,10 @@ $('.offre .wrap-offre .left .item .button').on("click", function () {
   if (child.className === "d-none") {
     parent.className = "d-none";
     child.className = "d-block";
+    if (window.matchMedia("(min-width: 992px)").matches) { // If media query matches
+      $('.offre .wrap-offre .left').addClass("w70");
+      $('.offre .wrap-offre .right').addClass("w30");
+    }
   } else {
     parent.className = "d-block";
     child.className = "d-none";
@@ -35,6 +41,11 @@ function offreReturn() {
   if (parent.className === "d-none") {
     parent.className = "d-block";
     child.className = "d-none";
+    $('.offre .wrap-offre .left .accordion-collapse').removeClass("show");
+    if (window.matchMedia("(min-width: 992px)").matches) { // If media query matches
+      $('.offre .wrap-offre .left').removeClass("w70");
+      $('.offre .wrap-offre .right').removeClass("w30");
+    }
   }
 }
 // offre
